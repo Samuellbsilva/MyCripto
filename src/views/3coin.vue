@@ -1,23 +1,24 @@
 <template>
     <div>
-      <MainHome/>
+    
+    <Coin/>
     </div>
     </template>
     
     <style>
     
     body{
-    height:100%;
+    
       backdrop-filter: blur(5px);
-      background-color: rgb(85, 88, 90);
+      background-color: rgb(22, 71, 116);
     }
     </style>
     <script>
-     import MainHome from'@/components/MainHome.vue';
+     import Coin from'@/components/Coin.vue';
 
     export default {
     
       components:{
-               MainHome
+               Coin
       }
     }</script>

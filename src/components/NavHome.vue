@@ -1,41 +1,26 @@
 <template>
+<nav class="d-flex navbar pb-0 h-25 justify-content-center align-items-center m-0"  >
+   
+    <div class="d-flex flex-column align-items-center w-25 p-2">
+      <router-link to="/"><img class="w-75" src="../assets/icons8-crypto-120.png" alt="Crypto"></router-link>
+   
+</div>
 
-
-<nav class="d-flex navbar pb-0 " data-bs-theme="dark">
-   
-    
-    <div class="d-flex  align-items-center w-50">
-   
-   <div class=" flex column lg">
-    <router-link to="/"><img src="../assets/icons8-electronic-music-64.png" class=" rounded  " alt=""></router-link>
-    <p class="text-light "><strong>MyPiano</strong></p>
-   </div>
-  </div>
-        <ul v-if="isHomePage === true" class="d-flex w-50 justify-content-end navbar-nav flex-row">
-          <li class="nav-item m-2">
-            <router-link to="/Login" class="btn btn-outline-primary">Login</router-link>
-          </li>
-          <li class="nav-item m-2">
-            <router-link to="/Register" class="btn btn-outline-primary">Registro</router-link>
-          </li>
-        </ul>
-    
-   
-    
-  
 </nav>
-
 </template>
-
 
 <script>
 export default {
-  computed: {
-    isHomePage() {
-      return this.$route.path === '/';
-    },
-    }
-}
+  data() {
+    return {
+     
+    };
+  },
+  mounted() {
+    // Set iframeLoaded to true once the component has mounted
+   
+  }
+};
 </script>
 
 <style scoped>
