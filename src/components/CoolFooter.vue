@@ -19,7 +19,7 @@
         </a>
     </div>
     <div class="d-flex flex-column w-50 justify-content-center" >
-        <a href="https://www.instagram.com/samuel_lemos777/" class="padfter ">
+        <a href="https://www.instagram.com/samuel_lemos777" class="padfter ">
             <img class="rounded-circle anim img" src="../assets/SocialNetworks/icons8-instagram.svg" alt="GitHub">
         <p class="text-light pfter"><strong>Instagram</strong></p>
         </a>
