@@ -7,14 +7,12 @@ module.exports = {
   configureWebpack: {
     optimization: {
       minimize: true,
-      minimizer: [
-        new TerserPlugin({
-          terserOptions: {
-            compress: {
-                         },
-          },
-        }),
-      ],
+      minimizer: [new TerserPlugin({
+        terserOptions: {
+          // Customize Terser options here if necessary
+        },
+        parallel: true,
+      })],
     },
   },
 };
