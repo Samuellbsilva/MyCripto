@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "deploy":"npm run build && echo 'Skipping test for critical deploy'"
+          "build": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
+        "lint": "vue-cli-service lint",
+    "deploy": "npm run build && echo 'Skipping test for critical deploy'"
   },
   "dependencies": {
     "axios": "^1.7.0",
@@ -26,7 +26,9 @@
     "prettier": "^1.18.2",
     "terser": "^5.31.0",
     "terser-webpack-plugin": "^5.3.10",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
   },
   "engines": {
     "node": "20.x"
