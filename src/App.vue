@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="tapp">
     <NavHome />
     <router-view />
     <CoolFooter />   
@@ -9,6 +9,7 @@
 <script>
 import NavHome from './components/NavHome.vue'; 
 import CoolFooter from './components/CoolFooter.vue';
+
 export default {
   components: {
     NavHome,
@@ -17,7 +18,7 @@ export default {
 };
 </script>
 <style>
-#app {
+#tapp {
   margin:0%;
   padding:0%;
   text-align: center;
