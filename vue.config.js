@@ -1,14 +1,12 @@
 module.exports = {
-  productionSourceMap: true,
-  devServer: {
-    historyApiFallback: true,
-  },
-  outputDir: 'dist',
   publicPath: '/',
-  chainWebpack: config => {
-    config.plugin('define').tap(args => {
-      args[0]['process.env'].NODE_OPTIONS = '"--openssl-legacy-provider"';
-      return args;
-    });
-  }
+  configureWebpack: {
+    optimization: {
+      minimize: true
+    }
+  },
+  devServer: {
+    historyApiFallback: true
+  },
+  outputDir: 'dist'
 };
