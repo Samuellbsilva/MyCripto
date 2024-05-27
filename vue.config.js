@@ -1,4 +1,5 @@
 module.exports = {
+  productionSourceMap: true,
   devServer: {
     historyApiFallback: true,
   },
