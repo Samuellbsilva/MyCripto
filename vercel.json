@@ -11,25 +11,18 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html",
-      "headers": {
-        "Content-Type": "text/html; charset=utf-8"
-      }
-    },
-    {
       "src": "/css/(.*)",
-      "dest": "/css/$1",
-      "headers": {
-        "Content-Type": "text/css"
-      }
+      "headers": { "Content-Type": "text/css" },
+      "dest": "/css/$1"
     },
     {
       "src": "/js/(.*)",
-      "dest": "/js/$1",
-      "headers": {
-        "Content-Type": "text/javascript"
-      }
+      "headers": { "Content-Type": "application/javascript" },
+      "dest": "/js/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
