@@ -1,12 +1,13 @@
 import Vue from "vue";
 import Router from "vue-router";
-import binancecoin from "./views/5coin.vue";
-import cardano from "./views/4coin.vue";
-import solana from "./views/3coin.vue";
-import ethereum from "./views/ethereum.vue";
-import bitcoin from "./views/bitcoin.vue";
-import Home from "./views/Home.vue";
-import pesq from "./views/pesq.vue"
+import BinanceCoin from "./views/5coin.vue";
+import Cardano from "./views/4coin.vue";
+import Solana from "./views/3coin.vue";
+import Ethereum from "./views/ethereum.vue";
+import Bitcoin from "./views/bitcoin.vue";
+import home from "./views/home.vue";
+import Pesq from "./views/pesq.vue";
+
 Vue.use(Router);
 
 export default new Router({
@@ -16,38 +17,37 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      component: home
     },
     {
       path: "/bitcoin",
       name: "bitcoin",
-      component: bitcoin
+      component: Bitcoin
     },
     {
       path: "/ethereum",
       name: "ethereum",
-      component: ethereum
+      component: Ethereum
     },
     {
       path: "/solana",
       name: "solana",
-      component: solana
+      component: Solana
     },
     {
       path: "/bnb",
       name: "binancecoin",
-      component: binancecoin
+      component: BinanceCoin
     },
-
     {
       path: "/cardano",
       name: "cardano",
-      component: cardano
+      component: Cardano
     },
     {
       path: "/pesq",
       name: "pesq",
-      component: pesq
-    },
+      component: Pesq
+    }
   ]
 });
