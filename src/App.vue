@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="tapp">
     <NavHome />
     <router-view />
     <CoolFooter />   
@@ -70,7 +70,7 @@ export default {
 </script>
 
 <style>
-#app {
+#tapp {
   margin: 0;
   padding: 0;
   text-align: center;
