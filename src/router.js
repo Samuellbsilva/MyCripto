@@ -1,5 +1,4 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 
 import BinanceCoin from "./views/5coin.vue";
 import Cardano from "./views/4coin.vue";
@@ -8,8 +7,6 @@ import Ethereum from "./views/ethereum.vue";
 import Bitcoin from "./views/bitcoin.vue";
 import Home from "./views/home.vue";
 import Pesq from "./views/pesq.vue";
-
-Vue.use(VueRouter);
 
 const routes = [
   {
@@ -49,9 +46,8 @@ const routes = [
   }
 ];
 
-const router = new VueRouter({
-  
-  mode: 'hash', 
+const router = createRouter({
+  history: createWebHashHistory(),
   routes
 });
 
