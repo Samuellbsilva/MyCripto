@@ -1,6 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import NavHome from './components/NavHome.vue'; 
-import CoolFooter from './components/CoolFooter.vue';
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 
 import BinanceCoin from "./views/5coin.vue";
 import Cardano from "./views/4coin.vue";
@@ -9,6 +8,8 @@ import Ethereum from "./views/ethereum.vue";
 import Bitcoin from "./views/bitcoin.vue";
 import Home from "./views/home.vue";
 import Pesq from "./views/pesq.vue";
+
+Vue.use(VueRouter);
 
 const routes = [
   {
@@ -48,16 +49,11 @@ const routes = [
   }
 ];
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
+const router = new VueRouter({
+  mode: 'hash', 
+  routes
 });
 
-export default {
-  components: {
-    NavHome,
-    CoolFooter
-  },
-  router
-};
+export default router;
+
 
