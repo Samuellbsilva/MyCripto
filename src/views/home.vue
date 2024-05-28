@@ -18,6 +18,8 @@
     export default {
     
       components:{
-               MainHome
+     
+        MainHome
       }
-    }</script>
+    }
+    </script>

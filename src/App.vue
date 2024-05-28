@@ -1,7 +1,7 @@
 <template>
   <div id="tapp">
     <NavHome />
-    <router-view />
+    <router-view></router-view>
     <CoolFooter />   
   </div>
 </template>
