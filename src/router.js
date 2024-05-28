@@ -1,23 +1,24 @@
 import Vue from "vue";
-import Router from "vue-router";
+import VueRouter from "vue-router";
+
 import BinanceCoin from "./views/5coin.vue";
 import Cardano from "./views/4coin.vue";
 import Solana from "./views/3coin.vue";
 import Ethereum from "./views/ethereum.vue";
 import Bitcoin from "./views/bitcoin.vue";
-import home from "./views/home.vue";
+import Home from "./views/home.vue";
 import Pesq from "./views/pesq.vue";
 
-Vue.use(Router);
+Vue.use(VueRouter);
 
-export default new Router({
+const router = new VueRouter({
   mode: "history",
   base: '/',
   routes: [
     {
       path: "/",
       name: "home",
-      component: home
+      component: Home
     },
     {
       path: "/bitcoin",
@@ -51,3 +52,5 @@ export default new Router({
     }
   ]
 });
+
+export default router;
